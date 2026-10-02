@@ -26,8 +26,8 @@ const TEMPLATES = [
   {
     key: "document",
     alias: "d",
-    name: "技术文档站",
-    desc: "对标 VitePress 的文档站模板（导航/侧栏/搜索/暗色模式），内置 lumfall 文档内容",
+    name: "技术文档站（空模板）",
+    desc: "导航/侧栏/搜索/主题就绪，生成后放入自己的内容即可",
     selfName: "lumfall-document",
   },
 ];
