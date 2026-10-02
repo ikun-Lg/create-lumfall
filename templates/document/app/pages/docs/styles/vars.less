@@ -1,0 +1,87 @@
+// 文档站设计变量：所有颜色走 CSS 变量，暗色模式通过 body[arco-theme="dark"]
+// 覆盖变量实现（Arco 组件的暗色也由同一属性驱动，两边自动同步）。
+
+:root {
+  // 基础色板
+  --doc-bg: #ffffff;
+  --doc-bg-soft: #f7f8fa;
+  --doc-navbar-bg: rgba(255, 255, 255, 0.86);
+  --doc-sidebar-bg: #ffffff;
+  --doc-text-1: #1d2129;
+  --doc-text-2: #4e5969;
+  --doc-text-3: #86909c;
+  --doc-border: #e5e6eb;
+  --doc-brand: #165dff;
+  --doc-brand-soft: rgba(22, 93, 255, 0.08);
+  --doc-mark-bg: rgba(22, 93, 255, 0.16);
+
+  // 代码块
+  --doc-code-bg: #f7f8fa;
+  --doc-code-bar-bg: #f0f1f3;
+  --doc-code-border: #e5e6eb;
+  --doc-code-text: #24292f;
+  --doc-inline-code-bg: rgba(22, 93, 255, 0.06);
+  --doc-inline-code-text: #165dff;
+
+  // highlight.js 语法高亮（亮色：接近 GitHub Light）
+  --doc-hl-keyword: #cf222e;
+  --doc-hl-built-in: #0550ae;
+  --doc-hl-type: #953800;
+  --doc-hl-literal: #0550ae;
+  --doc-hl-number: #0550ae;
+  --doc-hl-string: #0a3069;
+  --doc-hl-comment: #6e7781;
+  --doc-hl-function: #8250df;
+  --doc-hl-tag: #116329;
+  --doc-hl-attr: #0550ae;
+  --doc-hl-variable: #953800;
+  --doc-hl-meta: #6e7781;
+  --doc-hl-section: #0550ae;
+  --doc-hl-selector: #6639ba;
+  --doc-hl-addition-bg: #dafbe1;
+  --doc-hl-deletion-bg: #ffebe9;
+
+  // 阴影
+  --doc-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+body[arco-theme="dark"] {
+  --doc-bg: #0d0e10;
+  --doc-bg-soft: #17181a;
+  --doc-navbar-bg: rgba(23, 24, 26, 0.86);
+  --doc-sidebar-bg: #0d0e10;
+  --doc-text-1: #f2f3f5;
+  --doc-text-2: #c2c7cc;
+  --doc-text-3: #8a9099;
+  --doc-border: #333335;
+  --doc-brand: #3c7eff;
+  --doc-brand-soft: rgba(60, 126, 255, 0.16);
+  --doc-mark-bg: rgba(60, 126, 255, 0.32);
+
+  --doc-code-bg: #17181a;
+  --doc-code-bar-bg: #1f2022;
+  --doc-code-border: #333335;
+  --doc-code-text: #e6e8eb;
+  --doc-inline-code-bg: rgba(60, 126, 255, 0.14);
+  --doc-inline-code-text: #84a8ff;
+
+  // 暗色语法高亮（接近 GitHub Dark）
+  --doc-hl-keyword: #ff7b72;
+  --doc-hl-built-in: #79c0ff;
+  --doc-hl-type: #ffa657;
+  --doc-hl-literal: #79c0ff;
+  --doc-hl-number: #79c0ff;
+  --doc-hl-string: #a5d6ff;
+  --doc-hl-comment: #8b949e;
+  --doc-hl-function: #d2a8ff;
+  --doc-hl-tag: #7ee787;
+  --doc-hl-attr: #79c0ff;
+  --doc-hl-variable: #ffa657;
+  --doc-hl-meta: #8b949e;
+  --doc-hl-section: #79c0ff;
+  --doc-hl-selector: #d2a8ff;
+  --doc-hl-addition-bg: rgba(46, 160, 67, 0.28);
+  --doc-hl-deletion-bg: rgba(248, 81, 73, 0.24);
+
+  --doc-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}

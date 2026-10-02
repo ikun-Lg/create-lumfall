@@ -1,0 +1,31 @@
+{
+  "name": "lumfall-basic-project",
+  "version": "1.0.0",
+  "description": "基于 lumfall 的基础业务项目骨架：目录约定、示例 API 与示例页面，开箱即用",
+  "main": "server.js",
+  "scripts": {
+    "dev": "_ENV='local' nodemon --exitcrash server.js",
+    "beta": "_ENV='beta' nodemon --exitcrash server.js",
+    "prod": "_ENV='prod' node server.js",
+    "build:dev": "_ENV='local' node --max_old_space_size=4096 ./build.js",
+    "build:prod": "_ENV='prod' node ./build.js",
+    "start:dev": "concurrently --kill-others-on-fail -n webpack,server -c cyan,green \"pnpm build:dev\" \"pnpm dev\"",
+    "start:prod": "pnpm build:prod && pnpm prod",
+    "new-page": "node ./node_modules/lumfall/scripts/generate-page.js"
+  },
+  "dependencies": {
+    "lumfall": "^1.2.1"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14"
+  },
+  "packageManager": "pnpm@10.30.0",
+  "keywords": [
+    "lumfall",
+    "koa",
+    "vue",
+    "fullstack"
+  ],
+  "license": "ISC"
+}

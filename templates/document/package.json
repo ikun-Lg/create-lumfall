@@ -1,0 +1,36 @@
+{
+  "name": "lumfall-document",
+  "version": "1.0.0",
+  "description": "基于 lumfall 的技术文档站模板：导航、侧栏、目录、搜索、暗色模式，对标 VitePress 的使用体验",
+  "main": "server.js",
+  "scripts": {
+    "dev": "_ENV='local' nodemon --exitcrash server.js",
+    "beta": "_ENV='beta' nodemon --exitcrash server.js",
+    "prod": "_ENV='prod' node server.js",
+    "build:dev": "_ENV='local' node --max_old_space_size=4096 ./build.js",
+    "build:prod": "_ENV='prod' node ./build.js",
+    "start:dev": "concurrently --kill-others-on-fail -n webpack,server -c cyan,green \"pnpm build:dev\" \"pnpm dev\"",
+    "start:prod": "pnpm build:prod && pnpm prod",
+    "build:static": "node ./scripts/build-static.js"
+  },
+  "dependencies": {
+    "lumfall": "^1.2.1",
+    "highlight.js": "^11.9.0",
+    "markdown-it": "^14.0.0",
+    "markdown-it-container": "^4.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "nodemon": "^3.1.14"
+  },
+  "packageManager": "pnpm@10.30.0",
+  "keywords": [
+    "lumfall",
+    "docs",
+    "documentation",
+    "vitepress",
+    "koa",
+    "vue"
+  ],
+  "license": "ISC"
+}
