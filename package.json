@@ -1,6 +1,6 @@
 {
   "name": "create-lumfall",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lumfall 应用脚手架：一条命令生成可运行的基础业务项目或技术文档站（pnpm create lumfall my-app）",
   "bin": {
     "create-lumfall": "cli.js"
