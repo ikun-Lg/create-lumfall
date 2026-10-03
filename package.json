@@ -1,25 +1,23 @@
 {
   "name": "create-lumfall",
-  "version": "1.0.1",
-  "description": "lumfall 应用脚手架：一条命令生成可运行的基础业务项目或技术文档站（pnpm create lumfall my-app）",
+  "version": "1.1.0",
+  "description": "lumfall 应用脚手架：一条命令从 GitHub 拉取并生成基础业务项目 / B 端管理台 / 技术文档站（pnpm create lumfall my-app）",
   "bin": {
     "create-lumfall": "cli.js"
   },
   "files": [
     "cli.js",
-    "templates/",
     "README.md"
   ],
-  "scripts": {
-    "sync": "node scripts/sync-templates.js"
-  },
   "keywords": [
     "lumfall",
     "create",
     "scaffold",
+    "template",
     "koa",
     "vue",
-    "fullstack"
+    "fullstack",
+    "admin"
   ],
   "author": "lggbond",
   "license": "ISC",
